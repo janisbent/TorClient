@@ -1,0 +1,9 @@
+[package]
+name = "tor_client"
+version = "0.1.0"
+authors = ["Ben Janis <benjamin.janis@tufts.edu>"]
+
+[dependencies]
+regex = "1"
+clap = "2.32"
+tor_crypto = { path = "../tor_crypto" }
