@@ -1,11 +1,12 @@
 extern crate clap;
 extern crate regex;
 extern crate tor_crypto;
-mod pfinterface;
+mod pfserver;
+mod router;
 use std::net::{TcpListener, TcpStream};
 use std::process::exit;
 use clap::{Arg, App};
-use pfinterface::PFServer;
+use pfserver::PFServer;
 use std::fs::File;
 use std::io::Read;
 
